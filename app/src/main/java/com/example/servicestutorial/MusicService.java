@@ -25,7 +25,7 @@ public class MusicService extends Service {
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
 
-        return super.onStartCommand(intent, flags, startId);
+        return START_NOT_STICKY;
     }
 
 
